@@ -128,6 +128,8 @@ func (d *DNSProvider) Present(domain, token, keyAuth string) error {
 	}
 	newRecords = append(newRecords, record)
 
+    Logger.Print("test")
+
 	err = d.updateTxtRecords(newRecords, domainZone, recordName)
 	if err != nil {
 		return fmt.Errorf("godaddy: failed to add TXT record: %w", err)
