@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"strings"
 	"time"
+    "log"
 
 	"github.com/go-acme/lego/v4/challenge/dns01"
 	"github.com/go-acme/lego/v4/platform/config/env"
