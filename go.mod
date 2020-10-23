@@ -1,4 +1,5 @@
 module github.com/go-acme/lego/v3
+replace github.com/go-acme/lego github.com/drbw/lego v3.8.2
 
 go 1.14
 
